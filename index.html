@@ -9,16 +9,20 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="CubeMaze">
   <meta property="og:description" content="Solve 3D mazes one 2D slice at a time.">
-  <meta property="og:image" content="assets/social-card.svg">
+  <meta property="og:image" content="assets/social-card.png">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="preload" href="assets/hero-cube.svg" as="image">
+  <link rel="icon" href="assets/app-icon.png" type="image/png">
+  <link rel="preload" href="assets/hero-visual.png" as="image">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
     <a class="brand" href="#top" aria-label="CubeMaze home">
-      <img src="assets/logo.svg" width="220" height="64" alt="CubeMaze">
+      <img class="brand-icon" src="assets/app-icon.png" width="48" height="48" alt="">
+      <span class="brand-copy">
+        <span class="brand-title">CubeMaze</span>
+        <span class="brand-tagline">Find your third direction</span>
+      </span>
     </a>
     <nav class="nav" aria-label="Primary navigation">
       <a href="#gameplay" data-i18n="nav.gameplay">Gameplay</a>
@@ -58,7 +62,7 @@
         </dl>
       </div>
       <div class="hero-art" aria-hidden="true">
-        <img src="assets/hero-cube.svg" width="900" height="680" alt="">
+        <img src="assets/hero-visual.png" width="900" height="680" alt="">
       </div>
     </section>
 
@@ -71,7 +75,7 @@
         </p>
       </div>
       <div class="gameplay-layout">
-        <img class="card-image" src="assets/gameplay-slices.svg" width="900" height="520" alt="CubeMaze gameplay flow: swipe, rotate, exit">
+        <img class="card-image" src="assets/gameplay-flow.png" width="900" height="520" alt="CubeMaze gameplay flow: swipe, rotate, exit">
         <div class="gameplay-steps" aria-label="Gameplay steps">
           <article>
             <span>1</span>

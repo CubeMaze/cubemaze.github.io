@@ -55,10 +55,38 @@ a { color: inherit; }
 .brand {
   display: inline-flex;
   align-items: center;
+  gap: 12px;
   text-decoration: none;
 }
 
-.brand img { width: 190px; height: auto; }
+.brand-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  box-shadow: 0 0 18px rgba(90, 200, 250, .42);
+}
+
+.brand-copy {
+  display: grid;
+  gap: 1px;
+}
+
+.brand-title {
+  color: var(--text);
+  font-size: 24px;
+  font-weight: 950;
+  letter-spacing: -.02em;
+  line-height: 1;
+}
+
+.brand-tagline {
+  color: var(--muted);
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
 
 .nav {
   display: flex;
@@ -438,7 +466,9 @@ blockquote {
 }
 
 @media (max-width: 620px) {
-  .brand img { width: 164px; }
+  .brand-icon { width: 42px; height: 42px; }
+  .brand-title { font-size: 21px; }
+  .brand-tagline { font-size: 8px; }
   .nav { gap: 12px; }
   .stats,
   .feature-grid {
