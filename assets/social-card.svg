@@ -3,8 +3,8 @@
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop stop-color="#102d55"/>
-      <stop offset=".48" stop-color="#071326"/>
-      <stop offset="1" stop-color="#050914"/>
+      <stop offset=".48" stop-color="#101935"/>
+      <stop offset="1" stop-color="#0a0e1a"/>
     </linearGradient>
     <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
       <feGaussianBlur stdDeviation="8" result="blur"/>
@@ -23,7 +23,7 @@
     <text x="0" y="136" fill="#7fe5ff" font-family="Inter, ui-sans-serif, system-ui" font-size="35" font-weight="800">Find your third direction.</text>
     <text x="0" y="224" fill="#c9d7eb" font-family="Inter, ui-sans-serif, system-ui" font-size="30">A minimalist iPhone and iPad puzzle game</text>
     <text x="0" y="267" fill="#c9d7eb" font-family="Inter, ui-sans-serif, system-ui" font-size="30">about solving 3D mazes one 2D slice at a time.</text>
-    <rect y="340" width="310" height="74" rx="37" fill="#f23b55"/>
+    <rect y="340" width="310" height="74" rx="37" fill="#0a84ff"/>
     <text x="38" y="387" fill="#fff" font-family="Inter, ui-sans-serif, system-ui" font-size="25" font-weight="900">120 handcrafted levels</text>
   </g>
 </svg>
