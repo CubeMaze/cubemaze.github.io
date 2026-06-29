@@ -1,0 +1,19 @@
+{
+  "name": "CubeMaze",
+  "short_name": "CubeMaze",
+  "description": "Solve 3D cube mazes one 2D slice at a time.",
+  "start_url": "https://cubemaze.github.io/",
+  "scope": "https://cubemaze.github.io/",
+  "display": "standalone",
+  "background_color": "#0a0e1a",
+  "theme_color": "#0a0e1a",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "assets/app-icon.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
