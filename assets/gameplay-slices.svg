@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" role="img" aria-labelledby="title desc">
+  <title id="title">2D slices explain a 3D maze</title>
+  <desc id="desc">Three panels show flat two-dimensional slices that combine into one three-dimensional maze.</desc>
+  <defs>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#102a4b"/>
+      <stop offset="1" stop-color="#071326"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="900" height="420" rx="32" fill="#050914"/>
+  <g transform="translate(70 65)">
+    <rect width="220" height="220" rx="28" fill="url(#panel)" stroke="#3ad3ff" opacity=".92"/>
+    <g stroke="#3ad3ff" opacity=".55">
+      <path d="M55 0v220M110 0v220M165 0v220M0 55h220M0 110h220M0 165h220"/>
+    </g>
+    <path d="M55 55h110v55H55Zm55 55v55h55" fill="none" stroke="#ffd15c" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="55" cy="55" r="16" fill="#f23b55" filter="url(#glow)"/>
+    <path d="M151 165h40m-13-13 13 13-13 13" fill="none" stroke="#32f28a" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="0" y="270" fill="#e9f8ff" font-family="Inter, ui-sans-serif, system-ui" font-size="22" font-weight="800">1. Move on a slice</text>
+  </g>
+  <g transform="translate(340 65)">
+    <rect width="220" height="220" rx="28" fill="url(#panel)" stroke="#3ad3ff" opacity=".92"/>
+    <g stroke="#3ad3ff" opacity=".55">
+      <path d="M55 0v220M110 0v220M165 0v220M0 55h220M0 110h220M0 165h220"/>
+    </g>
+    <path d="M40 132c40-74 104-96 156-62" fill="none" stroke="#32f28a" stroke-width="9" stroke-linecap="round"/>
+    <path d="M189 38 202 75l-39-4" fill="none" stroke="#32f28a" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M70 165h94M70 110h55M125 55h39" stroke="#ffd15c" stroke-width="9" stroke-linecap="round"/>
+    <text x="0" y="270" fill="#e9f8ff" font-family="Inter, ui-sans-serif, system-ui" font-size="22" font-weight="800">2. Rotate the world</text>
+  </g>
+  <g transform="translate(610 65)">
+    <rect width="220" height="220" rx="28" fill="url(#panel)" stroke="#3ad3ff" opacity=".92"/>
+    <g stroke="#3ad3ff" opacity=".55">
+      <path d="M55 0v220M110 0v220M165 0v220M0 55h220M0 110h220M0 165h220"/>
+    </g>
+    <path d="M55 165h55V55h55v55" fill="none" stroke="#ffd15c" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="55" cy="165" r="16" fill="#f23b55" filter="url(#glow)"/>
+    <path d="M160 110h36m-12-12 12 12-12 12" fill="none" stroke="#32f28a" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="0" y="270" fill="#e9f8ff" font-family="Inter, ui-sans-serif, system-ui" font-size="22" font-weight="800">3. Find the exit</text>
+  </g>
+</svg>

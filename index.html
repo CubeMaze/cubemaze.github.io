@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CubeMaze · Find your third direction</title>
+  <meta name="description" content="CubeMaze is a minimalist iPhone and iPad puzzle game about solving 3D cube mazes one 2D slice at a time.">
+  <meta name="theme-color" content="#050914">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="CubeMaze">
+  <meta property="og:description" content="Solve 3D mazes one 2D slice at a time.">
+  <meta property="og:image" content="assets/social-card.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/hero-cube.svg" as="image">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="CubeMaze home">
+      <img src="assets/logo.svg" width="220" height="64" alt="CubeMaze">
+    </a>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="#gameplay" data-i18n="nav.gameplay">Gameplay</a>
+      <a href="#features" data-i18n="nav.features">Features</a>
+      <a href="#privacy" data-i18n="nav.privacy">Privacy</a>
+      <button class="language-toggle" type="button" data-language-toggle aria-label="Switch language">
+        <span data-lang-label>中文</span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="hero.eyebrow">Minimalist 3D puzzle game for iPhone and iPad</p>
+        <h1 data-i18n="hero.title">Find your third direction.</h1>
+        <p class="hero-lede" data-i18n="hero.lede">
+          You thought the world had four directions: up, down, left, right. Then the wall you could not pass became a path when you changed your view.
+        </p>
+        <div class="cta-row">
+          <a class="button primary" href="#gameplay" data-i18n="hero.primary">See how it plays</a>
+          <a class="button secondary" href="#privacy" data-i18n="hero.secondary">Privacy-first design</a>
+        </div>
+        <dl class="stats" aria-label="Game highlights">
+          <div>
+            <dt>120</dt>
+            <dd data-i18n="stats.levels">campaign levels</dd>
+          </div>
+          <div>
+            <dt>5</dt>
+            <dd data-i18n="stats.chapters">chapters</dd>
+          </div>
+          <div>
+            <dt>∞</dt>
+            <dd data-i18n="stats.random">seeded random mazes</dd>
+          </div>
+        </dl>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <img src="assets/hero-cube.svg" width="900" height="680" alt="">
+      </div>
+    </section>
+
+    <section id="gameplay" class="section split">
+      <div>
+        <p class="eyebrow" data-i18n="gameplay.eyebrow">Core gameplay</p>
+        <h2 data-i18n="gameplay.title">A 3D maze, understood as flat slices.</h2>
+        <p data-i18n="gameplay.body">
+          Move the slime on the visible 2D plane with one-finger swipes. Rotate the cube to reveal another slice of the same maze, then use the new perspective to reach the exit door.
+        </p>
+      </div>
+      <img class="card-image" src="assets/gameplay-slices.svg" width="900" height="420" alt="Three illustrated panels explaining how CubeMaze is played">
+    </section>
+
+    <section id="features" class="section">
+      <p class="eyebrow centered" data-i18n="features.eyebrow">What is inside</p>
+      <h2 class="centered" data-i18n="features.title">Built for short sessions and deep spatial thinking.</h2>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <span class="feature-icon">▦</span>
+          <h3 data-i18n="features.campaign.title">Handcrafted campaign</h3>
+          <p data-i18n="features.campaign.body">120 levels across five chapters, ordered from approachable puzzles to dense cube labyrinths.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon">↻</span>
+          <h3 data-i18n="features.rotation.title">Perspective switching</h3>
+          <p data-i18n="features.rotation.body">Rotate between views to turn hidden depth into usable paths.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon">◇</span>
+          <h3 data-i18n="features.hint.title">3D hints</h3>
+          <p data-i18n="features.hint.body">Need a nudge? Use an inline bird’s-eye hint to inspect the cube without leaving the game.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon">#</span>
+          <h3 data-i18n="features.random.title">Seeded random mode</h3>
+          <p data-i18n="features.random.body">Generate new mazes, share seeds, and replay the same challenge later.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon">🏆</span>
+          <h3 data-i18n="features.gamecenter.title">Game Center</h3>
+          <p data-i18n="features.gamecenter.body">Campaign leaderboards and achievements reward clean solves.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon">🌐</span>
+          <h3 data-i18n="features.language.title">English and Chinese</h3>
+          <p data-i18n="features.language.body">The game and this website support English and Simplified Chinese.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section quote-section">
+      <blockquote data-i18n="quote.text">“In this sliced labyrinth, learn to shift your perspective.”</blockquote>
+    </section>
+
+    <section id="privacy" class="section legal-callout">
+      <div>
+        <p class="eyebrow" data-i18n="privacy.eyebrow">Privacy-first</p>
+        <h2 data-i18n="privacy.title">No ads. No tracking. No analytics SDK.</h2>
+        <p data-i18n="privacy.body">
+          CubeMaze uses Apple Game Center for leaderboards and StoreKit for purchases. Progress, coins, settings, and random preferences stay local unless Apple services are used.
+        </p>
+      </div>
+      <div class="legal-links">
+        <a href="privacy-en.html" data-i18n="privacy.en">Privacy Policy · English</a>
+        <a href="privacy-zh.html" data-i18n="privacy.zh">隐私政策 · 简体中文</a>
+        <a href="terms-en.html" data-i18n="terms.en">Terms · English</a>
+        <a href="terms-zh.html" data-i18n="terms.zh">服务条款 · 简体中文</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span data-year></span> CubeMaze</p>
+    <p><a href="mailto:support@cubemaze.app">support@cubemaze.app</a></p>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
