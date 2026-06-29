@@ -220,6 +220,63 @@ a { color: inherit; }
   gap: clamp(28px, 5vw, 64px);
 }
 
+.gameplay-section {
+  display: grid;
+  gap: 28px;
+}
+
+.gameplay-section > div:first-child {
+  max-width: 860px;
+}
+
+.gameplay-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(280px, .68fr);
+  align-items: stretch;
+  gap: 18px;
+}
+
+.gameplay-steps {
+  display: grid;
+  gap: 14px;
+}
+
+.gameplay-steps article {
+  display: grid;
+  grid-template-columns: 42px 1fr;
+  column-gap: 14px;
+  align-content: center;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: var(--card);
+  box-shadow: var(--shadow);
+}
+
+.gameplay-steps span {
+  display: inline-grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  color: var(--bg);
+  background: var(--green);
+  font-size: 20px;
+  font-weight: 950;
+  grid-row: span 2;
+}
+
+.gameplay-steps h3 {
+  margin: 0 0 6px;
+  font-size: 20px;
+}
+
+.gameplay-steps p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.55;
+}
+
 .centered {
   margin-left: auto;
   margin-right: auto;
@@ -360,6 +417,7 @@ blockquote {
 
   .hero,
   .split,
+  .gameplay-layout,
   .legal-callout {
     grid-template-columns: 1fr;
   }

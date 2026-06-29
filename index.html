@@ -62,7 +62,7 @@
       </div>
     </section>
 
-    <section id="gameplay" class="section split">
+    <section id="gameplay" class="section gameplay-section">
       <div>
         <p class="eyebrow" data-i18n="gameplay.eyebrow">Core gameplay</p>
         <h2 data-i18n="gameplay.title">A 3D maze, understood as flat slices.</h2>
@@ -70,7 +70,26 @@
           Move the slime on the visible 2D plane with one-finger swipes. Rotate the cube to reveal another slice of the same maze, then use the new perspective to reach the exit door.
         </p>
       </div>
-      <img class="card-image" src="assets/gameplay-slices.svg" width="900" height="420" alt="Three illustrated panels explaining how CubeMaze is played">
+      <div class="gameplay-layout">
+        <img class="card-image" src="assets/gameplay-slices.svg" width="900" height="520" alt="CubeMaze gameplay flow: swipe, rotate, exit">
+        <div class="gameplay-steps" aria-label="Gameplay steps">
+          <article>
+            <span>1</span>
+            <h3 data-i18n="gameplay.step1.title">Swipe on the visible face</h3>
+            <p data-i18n="gameplay.step1.body">The character moves only on the 2D grid you are currently looking at.</p>
+          </article>
+          <article>
+            <span>2</span>
+            <h3 data-i18n="gameplay.step2.title">Rotate to change the slice</h3>
+            <p data-i18n="gameplay.step2.body">A wall in one view may become an open path after the cube turns.</p>
+          </article>
+          <article>
+            <span>3</span>
+            <h3 data-i18n="gameplay.step3.title">Use perspective to reach the door</h3>
+            <p data-i18n="gameplay.step3.body">Plan across views and guide the slime into the exit.</p>
+          </article>
+        </div>
+      </div>
     </section>
 
     <section id="features" class="section">
@@ -123,10 +142,8 @@
         </p>
       </div>
       <div class="legal-links">
-        <a href="privacy-en.html" data-i18n="privacy.en">Privacy Policy · English</a>
-        <a href="privacy-zh.html" data-i18n="privacy.zh">隐私政策 · 简体中文</a>
-        <a href="terms-en.html" data-i18n="terms.en">Terms · English</a>
-        <a href="terms-zh.html" data-i18n="terms.zh">服务条款 · 简体中文</a>
+        <a href="privacy.html" data-i18n="privacy.link">Privacy Policy</a>
+        <a href="terms.html" data-i18n="terms.link">Terms of Service</a>
       </div>
     </section>
   </main>

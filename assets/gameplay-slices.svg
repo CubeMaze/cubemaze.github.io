@@ -1,45 +1,80 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" role="img" aria-labelledby="title desc">
-  <title id="title">2D slices explain a 3D maze</title>
-  <desc id="desc">Three panels show flat two-dimensional slices that combine into one three-dimensional maze.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">CubeMaze gameplay flow</title>
+  <desc id="desc">A numbered diagram shows swiping on one face, rotating the cube, and reaching the exit door.</desc>
   <defs>
-    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
-      <stop stop-color="#102a4b"/>
+    <linearGradient id="faceFront" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#12335a"/>
       <stop offset="1" stop-color="#071326"/>
     </linearGradient>
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
+    <linearGradient id="faceSide" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#0b213d"/>
+      <stop offset="1" stop-color="#04101f"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
       <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
   </defs>
-  <rect width="900" height="420" rx="32" fill="#050914"/>
-  <g transform="translate(70 65)">
-    <rect width="220" height="220" rx="28" fill="url(#panel)" stroke="#3ad3ff" opacity=".92"/>
-    <g stroke="#3ad3ff" opacity=".55">
-      <path d="M55 0v220M110 0v220M165 0v220M0 55h220M0 110h220M0 165h220"/>
+  <rect width="900" height="520" rx="32" fill="#050914"/>
+  <path d="M90 390c150 42 425 54 720-8" fill="none" stroke="#102a4b" stroke-width="2"/>
+
+  <g transform="translate(66 72)">
+    <circle cx="34" cy="34" r="26" fill="#36ff98"/>
+    <text x="34" y="44" text-anchor="middle" fill="#050914" font-family="Inter, ui-sans-serif, system-ui" font-size="29" font-weight="950">1</text>
+    <g transform="translate(32 70)">
+      <rect width="210" height="210" rx="24" fill="url(#faceFront)" stroke="#65dcff" stroke-width="3"/>
+      <g stroke="#65dcff" stroke-width="1.5" opacity=".58">
+        <path d="M52.5 0v210M105 0v210M157.5 0v210M0 52.5h210M0 105h210M0 157.5h210"/>
+      </g>
+      <path d="M52 158h52V53h53" fill="none" stroke="#ffd15c" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+      <g filter="url(#glow)">
+        <path d="M54 162c-13 0-24-10-24-22 0-16 12-30 24-42 12 12 24 26 24 42 0 12-11 22-24 22Z" fill="#36ff98"/>
+        <circle cx="47" cy="138" r="3.8" fill="#050914"/>
+        <circle cx="61" cy="138" r="3.8" fill="#050914"/>
+      </g>
+      <path d="M58 140h83" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round"/>
+      <path d="M128 121l22 19-22 19" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
     </g>
-    <path d="M55 55h110v55H55Zm55 55v55h55" fill="none" stroke="#ffd15c" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
-    <circle cx="55" cy="55" r="16" fill="#f23b55" filter="url(#glow)"/>
-    <path d="M151 165h40m-13-13 13 13-13 13" fill="none" stroke="#32f28a" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
-    <text x="0" y="270" fill="#e9f8ff" font-family="Inter, ui-sans-serif, system-ui" font-size="22" font-weight="800">1. Move on a slice</text>
   </g>
-  <g transform="translate(340 65)">
-    <rect width="220" height="220" rx="28" fill="url(#panel)" stroke="#3ad3ff" opacity=".92"/>
-    <g stroke="#3ad3ff" opacity=".55">
-      <path d="M55 0v220M110 0v220M165 0v220M0 55h220M0 110h220M0 165h220"/>
+
+  <g transform="translate(337 72)">
+    <circle cx="34" cy="34" r="26" fill="#36ff98"/>
+    <text x="34" y="44" text-anchor="middle" fill="#050914" font-family="Inter, ui-sans-serif, system-ui" font-size="29" font-weight="950">2</text>
+    <g transform="translate(22 76)">
+      <path d="M72 46 156 0l84 46v112l-84 46-84-46Z" fill="url(#faceSide)" stroke="#65dcff" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M72 46 156 92l84-46M156 92v112" fill="none" stroke="#65dcff" stroke-width="2" opacity=".65"/>
+      <path d="M102 64h108M102 104h108M102 144h108M126 51v126M156 34v170M186 51v126" fill="none" stroke="#65dcff" stroke-width="1.4" opacity=".42"/>
+      <path d="M100 170c-56-57-45-128 20-168" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round"/>
+      <path d="M94 7h36l-16 34" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M218 22c56 57 45 128-20 168" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round"/>
+      <path d="M224 185h-36l16-34" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M108 138h48V92h50" fill="none" stroke="#ffd15c" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
     </g>
-    <path d="M40 132c40-74 104-96 156-62" fill="none" stroke="#32f28a" stroke-width="9" stroke-linecap="round"/>
-    <path d="M189 38 202 75l-39-4" fill="none" stroke="#32f28a" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M70 165h94M70 110h55M125 55h39" stroke="#ffd15c" stroke-width="9" stroke-linecap="round"/>
-    <text x="0" y="270" fill="#e9f8ff" font-family="Inter, ui-sans-serif, system-ui" font-size="22" font-weight="800">2. Rotate the world</text>
   </g>
-  <g transform="translate(610 65)">
-    <rect width="220" height="220" rx="28" fill="url(#panel)" stroke="#3ad3ff" opacity=".92"/>
-    <g stroke="#3ad3ff" opacity=".55">
-      <path d="M55 0v220M110 0v220M165 0v220M0 55h220M0 110h220M0 165h220"/>
+
+  <g transform="translate(626 72)">
+    <circle cx="34" cy="34" r="26" fill="#36ff98"/>
+    <text x="34" y="44" text-anchor="middle" fill="#050914" font-family="Inter, ui-sans-serif, system-ui" font-size="29" font-weight="950">3</text>
+    <g transform="translate(20 70)">
+      <rect width="210" height="210" rx="24" fill="url(#faceFront)" stroke="#65dcff" stroke-width="3"/>
+      <g stroke="#65dcff" stroke-width="1.5" opacity=".58">
+        <path d="M52.5 0v210M105 0v210M157.5 0v210M0 52.5h210M0 105h210M0 157.5h210"/>
+      </g>
+      <path d="M53 53h52v52h52v52" fill="none" stroke="#ffd15c" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+      <g transform="translate(136 126)">
+        <path d="M0 54V14C0 6 6 0 14 0h38c8 0 14 6 14 14v40" fill="#071326" stroke="#f23b55" stroke-width="7" stroke-linejoin="round"/>
+        <path d="M17 54V18h32v36" fill="#102a4b" stroke="#ffd15c" stroke-width="5"/>
+        <circle cx="42" cy="36" r="4" fill="#ffd15c"/>
+      </g>
+      <g filter="url(#glow)">
+        <path d="M57 68c-13 0-24-10-24-22 0-16 12-30 24-42 12 12 24 26 24 42 0 12-11 22-24 22Z" fill="#36ff98"/>
+        <circle cx="50" cy="44" r="3.8" fill="#050914"/>
+        <circle cx="64" cy="44" r="3.8" fill="#050914"/>
+      </g>
+      <path d="M74 56h88" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round"/>
+      <path d="M149 37l22 19-22 19" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
     </g>
-    <path d="M55 165h55V55h55v55" fill="none" stroke="#ffd15c" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
-    <circle cx="55" cy="165" r="16" fill="#f23b55" filter="url(#glow)"/>
-    <path d="M160 110h36m-12-12 12 12-12 12" fill="none" stroke="#32f28a" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
-    <text x="0" y="270" fill="#e9f8ff" font-family="Inter, ui-sans-serif, system-ui" font-size="22" font-weight="800">3. Find the exit</text>
   </g>
+
+  <path d="M272 205h46m-16-16 16 16-16 16M569 205h46m-16-16 16 16-16 16" fill="none" stroke="#9fb2cc" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity=".8"/>
 </svg>
